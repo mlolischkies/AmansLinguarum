@@ -35,7 +35,7 @@
 
 <section class="card">
 <h2 style="margin-top:18px">Kurz gesagt</h2>
-<p>Die App erhebt keine personenbezogenen Daten. Es gibt kein Konto, keine Anmeldung, keine Werbung und keine Analyse- oder Tracking-Dienste. Die App stellt keine Verbindung zu Servern des Anbieters her. Alles, was du einträgst, bleibt auf deinem Gerät – und nur wenn du die iCloud-Sicherung einschaltest, zusätzlich in deiner eigenen iCloud.</p>
+<p>Die App braucht kein Konto, keine Anmeldung und zeigt keine Werbung. Es gibt keine Analyse- oder Tracking-Dienste. Vokabeln und Lernstand bleiben auf deinem Gerät. Nur wenn du den <strong>Familien-Abgleich</strong> selbst einschaltest, werden Vokabeln und Lernstand auf einen Server übertragen, damit mehrere Geräte – etwa das Handy der Eltern und das iPad des Kindes – denselben Stand haben. Diesen Online-Speicher kannst du jederzeit in der App löschen. Zusätzlich kannst du die iCloud-Sicherung einschalten, die in deinem eigenen iCloud-Konto liegt.</p>
 </section>
 
 <section class="card">
@@ -44,7 +44,18 @@
 
 <h2>Daten in der App</h2>
 <h3>Vokabeln, Lernstand und Einstellungen</h3>
-<p>Deine Vokabeln, Lernfortschritte, Erfolge und Einstellungen werden lokal auf deinem Gerät gespeichert. Sie werden nicht an den Anbieter oder an Dritte übertragen. Die einzige Ausnahme ist die iCloud-Sicherung, wenn du sie einschaltest (siehe unten). Wenn du die App löschst, werden diese Daten ebenfalls gelöscht.</p>
+<p>Deine Vokabeln, Lernfortschritte, Erfolge und Einstellungen werden lokal auf deinem Gerät gespeichert. Sie werden nicht an den Anbieter oder an Dritte übertragen. Ausnahmen sind die iCloud-Sicherung und der Familien-Abgleich, wenn du sie einschaltest (siehe unten). Wenn du die App löschst, werden diese Daten ebenfalls gelöscht.</p>
+
+<h3>Foto-Import</h3>
+<p>Mit dem Foto-Import kannst du Vokabelseiten fotografieren oder Fotos aus deiner Mediathek wählen. Die App fragt dafür bei Bedarf nach Zugriff auf die Kamera. Die Texterkennung läuft vollständig auf deinem Gerät. Die Bilder werden weder gespeichert noch an den Anbieter oder an Dritte übertragen. Übernommen wird nur der erkannte Text, den du vorher prüfen kannst.</p>
+
+<h3>Familien-Abgleich (optional)</h3>
+<p>Der Familien-Abgleich ist ausgeschaltet, bis du ihn in den Einstellungen unter „Familie“ selbst einrichtest. Ein Gerät legt eine „Familie“ an und erzeugt dabei einen zufälligen Familien-Code aus 24 Zeichen. Auf den anderen Geräten gibst du den Code ein. Danach gleichen alle verbundenen Geräte ihre Vokabeln automatisch ab, solange die App geöffnet ist: neu angelegte, geänderte und gelöschte.</p>
+<p><strong>Übertragen werden:</strong> die Vokabeln mit Bedeutungen, Hinweis und Sprache, eine zufällige Kennung je Vokabel, der Lernstand je Vokabel (Anzahl richtiger und falscher Antworten, Zeitpunkt der letzten Abfrage, Zeitpunkte der letzten Fehler), Zeitstempel der letzten Änderung und der Familien-Code. <strong>Nicht übertragen werden:</strong> Name, E-Mail-Adresse, Apple-ID, Telefonnummer, Standort, Geräte-Kennungen, Erfahrungspunkte, Serie und Abzeichen.</p>
+<p><strong>Zweck und Rechtsgrundlage:</strong> Zweck ist allein der Abgleich der Vokabeln und des Lernstands zwischen den Geräten einer Familie. Rechtsgrundlage ist deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die du durch das Einschalten des Abgleichs erteilst. Du kannst sie jederzeit widerrufen, indem du die Familie in der App löschst.</p>
+<p><strong>Empfänger und Serverstandort:</strong> Die Daten werden bei Supabase gespeichert (Supabase, Inc.), einem Anbieter von Datenbank-Diensten. Supabase verarbeitet sie in unserem Auftrag auf Grundlage eines Auftragsverarbeitungsvertrags (Art. 28 DSGVO). Der Server steht in <strong>Frankfurt am Main (Deutschland, EU)</strong>. Technisch bedingt verarbeitet Supabase beim Abgleich Verbindungsdaten wie die IP-Adresse und den Zeitpunkt der Anfrage. Wo Daten in die USA übermittelt werden können, stützt sich das auf die Standardvertragsklauseln der EU-Kommission. Eine Weitergabe an weitere Empfänger, Werbung oder Profilbildung findet nicht statt.</p>
+<p><strong>Zugriff und Sicherheit:</strong> Die Übertragung ist per HTTPS verschlüsselt. Es gibt kein Konto: Wer den Familien-Code kennt, kann die Vokabeln der Familie lesen und ändern. Gib den Code deshalb nur innerhalb der Familie weiter. Der Code besteht aus 24 zufälligen Zeichen und lässt sich nicht erraten.</p>
+<p><strong>Speicherdauer und Löschung:</strong> Die Daten bleiben gespeichert, bis die Familie gelöscht wird. Das geht in der App unter „Einstellungen“ → „Familie“ → „Familie und Online-Daten löschen“: Dann werden alle Vokabeln und der Lernstand der Familie vom Server entfernt, für alle verbundenen Geräte. Die Vokabeln auf den Geräten bleiben erhalten. Mit „Verbindung trennen“ beendest du nur den Abgleich auf diesem Gerät, die Daten auf dem Server bleiben dann bis zum Löschen der Familie bestehen. Gelöschte Vokabeln werden auf dem Server zunächst als „gelöscht“ markiert, damit die Löschung bei den anderen Geräten ankommt, und verschwinden endgültig, wenn die Familie gelöscht wird.</p>
 
 <h3>Backup</h3>
 <p>Ein Backup entsteht nur, wenn du es selbst auslöst. Die App erstellt dann eine Datei und übergibt sie an das Teilen-Menü von iOS. Wohin die Datei geht – etwa in „Dateien“, in iCloud Drive oder in eine Nachricht –, entscheidest du. Für den gewählten Dienst gelten dessen eigene Datenschutzbestimmungen. Beim Laden eines Backups liest die App nur die Datei, die du auswählst.</p>
@@ -67,10 +78,13 @@
 <h2>Kontakt per E-Mail</h2>
 <p>Wenn du eine E-Mail schreibst, werden deine Adresse und der Inhalt nur verwendet, um dein Anliegen zu bearbeiten, und gelöscht, sobald sie dafür nicht mehr gebraucht werden.</p>
 
-<h2>Deine Rechte</h2>
-<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner personenbezogenen Daten, auf Datenübertragbarkeit sowie auf Widerspruch. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren. Wende dich dafür einfach an die oben genannte E-Mail-Adresse.</p>
+<h2>Kinder</h2>
+<p>Die App richtet sich an Schülerinnen und Schüler und wird in der Regel von den Eltern eingerichtet. Wir erheben keine Namen, Kontaktdaten oder Geräte-Kennungen und verwenden keine Daten für Werbung. Der Familien-Abgleich wird von den Erziehungsberechtigten eingerichtet und lässt sich jederzeit löschen.</p>
 
-<p class="sub" style="margin:24px 0 18px">Stand: 14. September 2026</p>
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung deiner personenbezogenen Daten, auf Datenübertragbarkeit sowie auf Widerspruch. Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Die Online-Daten des Familien-Abgleichs kannst du selbst in der App löschen. Weil es kein Konto gibt, können wir Daten nur zuordnen, wenn du uns den Familien-Code nennst. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren. Wende dich dafür einfach an die oben genannte E-Mail-Adresse.</p>
+
+<p class="sub" style="margin:24px 0 18px">Stand: 5. Oktober 2026</p>
 </section>
 
 <footer><a href="app.html">Über die App</a> · <a href="support.html">Support</a></footer>
